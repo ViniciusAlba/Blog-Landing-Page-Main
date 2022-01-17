@@ -167,7 +167,7 @@ body {
 .main-headline-future, .secondary-headline-future{
 
     font-family: 'Overpass', sans-serif;
-    color: #2C2D3F;
+    color: #1F3F5B;
 
 }
 
@@ -185,7 +185,7 @@ body {
     text-align: left;
     width: 500px;
 
-    font-size: 28px;
+    font-size: 24px;
     margin: 70px auto 15px auto;
 
 
@@ -193,17 +193,74 @@ body {
 
 .description-future {
 
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Overpass', sans-serif;
+
+    color: hsl(207, 13%, 34%);
 
     text-align: left;
     line-height: 1.5;
 
-    width: 520px;
+    width: 510px;
 
 }
 
 .secondary-headline-future, .description-future {
 
     margin-left: 180px;
+
+}
+
+.section-art-infrastructure {
+
+    background-color: hsl(237, 17%, 21%);
+    background-image: url(/images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: -50% 85%;
+
+    border-radius: 0 100px 0 100px;
+
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    height: 400px;
+
+}
+
+.image-art-infrastructure {
+
+    margin: 50px 0 0 120px;
+
+}
+
+.headline-art-infrastructure {
+
+    font-family: 'Overpass', sans-serif;
+
+    margin-right: 60px;
+
+    font-weight: 400;
+
+    width: 500px;
+    text-align: center;
+
+    font-size: 32px;
+
+}
+
+.description-art-infrastructure {
+
+    font-family: 'Overpass', sans-serif;
+
+    line-height: 1.5;
+
+    text-align: left;
+
+    width: 520px;
+
+    margin: 16px 0 16px auto;
 
 }

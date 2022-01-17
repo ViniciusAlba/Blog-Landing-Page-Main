@@ -283,9 +283,80 @@ body {
 
 }
 
+.headline-simple {
+
+    margin-top: 80px;
+
+}
+
 .description-simple {
 
     line-height: 1.5;
     width: 500px;
+
+    margin-bottom: 70px;
+
+}
+
+.footer {
+
+    height: 400px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+
+    background: #25252d;
+
+    border-top-right-radius: 100px;
+
+}
+
+.image-footer, .links-footer {
+
+    margin: 50px 120px;
+    text-align: left;
+
+}
+
+.links-footer {
+
+    width: 32px;
+
+    text-align: left;
+
+}
+
+.links-headline {
+    font-family: 'Ubuntu', sans-serif;
+
+    color: #FFFFFF;
+    font-weight: 600;
+
+}
+
+.links-content {
+
+    list-style: none;
+    padding: 0;
+
+}
+
+.links-item {
+
+    text-decoration: none;
+    color: hsl(240, 2%, 79%);
+
+    line-height: 2;
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.links-item:hover {
+
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
 
 }

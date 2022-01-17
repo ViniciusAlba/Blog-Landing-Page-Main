@@ -19,12 +19,12 @@ body {
 
 .main {
 
-    font-family: 'Ubuntu', sans-serif;
-
     background: url(/images/bg-pattern-intro-desktop.svg), linear-gradient(to right, hsl(13, 100%, 72%), rgb(255, 61, 84));
     background-position: 25% 52%;
     background-repeat: no-repeat;
     border-radius: 0 0 0 100px;
+
+    color: #FFFFFF;
 
     display: flex;
     flex-direction: column;
@@ -34,7 +34,9 @@ body {
 
 }
 
-.main-header, .header-dropdown-register, .header-menu-dropdown, .register {
+.main-header, .header-dropdown-register, .header-menu-dropdown, .register, .section-start-more {
+
+    font-family: 'Ubuntu', sans-serif;
 
     display: flex;
     flex-direction: row;
@@ -64,7 +66,7 @@ body {
 
 }
 
-.dropdown-button, .register-login, .register-signup {
+.dropdown-button, .register-login, .register-signup, .start-free, .learn-more {
 
     color: #FFFFFF;
 
@@ -75,13 +77,13 @@ body {
 
 }
 
-.register-login, .register-signup {
+.register-login, .register-signup, .start-free, .learn-more {
 
     font-weight: 600;
 
 }
 
-.register-login:hover, .register-signup:hover {
+.register-login:hover, .register-signup:hover, .start-free:hover, .learn-more:hover {
 
     background: #FFFFFF;
     
@@ -94,4 +96,43 @@ body {
 .dropdown-content {
 
     display: none;
+}
+
+.main-section {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+
+}
+
+.headline {
+
+    font-family: 'Overpass', sans-serif;
+
+    margin-bottom: 0;
+
+    font-size: 64px;
+    font-weight: 400;
+
+}
+
+.description {
+
+    font-family: 'Overpass', sans-serif;
+
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.start-free, .learn-more {
+
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    margin: 30px 10px;
+
 }

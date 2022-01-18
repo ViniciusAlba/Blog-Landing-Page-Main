@@ -1,266 +1,257 @@
-/* GOOGLE FONTS - Ubuntu - Used at rest of page */
+/* GOOGLE FONTS - Ubuntu */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-/* GOOGLE FONTS - Overpass - Used at <p></p> tags */
+/* GOOGLE FONTS - Overpass */
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
 
-/* Colocar um gap no main-header e no header-menu usar display: flex */
-
-body {
-
-    font-size: 16px;
+* {
 
     margin: 0;
     padding: 0;
 
+}
+
+body {
+
+    font-size: 16px;
     box-sizing: border-box;
 
 }
 
 .header {
 
+    width: 1440px;
+
     background: url(/images/bg-pattern-intro-desktop.svg), linear-gradient(to right, hsl(13, 100%, 72%), rgb(255, 61, 84));
     background-position: 25% 52%;
     background-repeat: no-repeat;
-    border-radius: 0 0 0 100px;
-
-    color: #FFFFFF;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    height: 600px;
+    min-height: 600px;
+    border-bottom-left-radius: 100px;
 
 }
 
-.main-header, .header-dropdown-register, .header-menu-dropdown, .register, .section-start-more {
-
-    font-family: 'Ubuntu', sans-serif;
+.main-header, .logo-dropdown-menu {
 
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
 
 }
 
 .main-header {
 
-    width: 1115px;
+    justify-content: space-around;
+    padding-top: 80px;
+    margin: 0 auto;
 
 }
 
-.main-header {
+.logo-dropdown-menu {
 
-    margin: 60px auto 0 auto;
-
-}
-
-.header-logo {
-
-    margin: 0 30px 0 0;
+    gap: 50px;
 
 }
 
-.header-dropdown-register {
+.dropdown, .login, .sign-up, .start-free, .learn-more {
 
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.dropdown-button, .register-login, .register-signup, .start-free, .learn-more {
-
+    font-family: 'Ubuntu', sans-serif;
     color: #FFFFFF;
 
-    text-decoration: none;
-    text-align: center;
+}
 
-    padding: 10px 30px;
+.dropdown, .register {
+
+    margin-top: 12px;
 
 }
 
-.register-login, .register-signup, .start-free, .learn-more {
+.dropdown-headline:hover {
 
+    cursor: pointer;
+
+}
+
+.dropdown-list {
+
+    display: none;
+    list-style: none;
+    margin-top: 20px;
+
+}
+
+.list-item {
+
+    text-decoration: none;
+    color: #FFFFFF;
+    line-height: 2;
+
+}
+
+.login, .sign-up, .start-free, .learn-more {
+
+    padding: 10px 30px;
+    text-decoration: none;
     font-weight: 600;
 
 }
 
-.register-login:hover, .register-signup:hover, .start-free:hover, .learn-more:hover {
+.login:hover, .sign-up:hover, .start-free:hover, .learn-more:hover {
 
     background: #FFFFFF;
-    
     color: #FF525D;
-
     border-radius: 20px;
 
 }
 
-.dropdown-content {
-
-    display: none;
-}
-
-.main-section {
+.main-section-header {
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     margin-top: 100px;
+    color: #FFFFFF;
 
 }
 
-.headline {
+.main-section-headline, .main-section-description {
 
     font-family: 'Overpass', sans-serif;
 
-    margin-bottom: 0;
+}
 
+.main-section-headline {
+
+    font-weight: 400px;
     font-size: 64px;
-    font-weight: 400;
 
 }
 
-.description {
+.main-section-description {
 
-    font-family: 'Overpass', sans-serif;
-
-    text-align: center;
     font-size: 18px;
+    text-align: center;
+    margin: 30px auto;
+
+}
+
+.main-section-start-more {
+
+    margin: 30px auto;
 
 }
 
 .start-free, .learn-more {
 
+    margin: 0 5px;
     border: 1px solid #FFFFFF;
     border-radius: 20px;
-    margin: 30px 10px;
 
 }
 
 .section-future {
 
+    min-height: 900px;
+    background: url(/images/illustration-editor-desktop.svg);
+    background-position: 152%;
+    background-repeat: no-repeat;
+    font-family: 'Overpass', sans-serif;
     display: flex;
     flex-direction: column;
-
-    background: url(/images/illustration-editor-desktop.svg);
-    background-position: 150%;
-    background-repeat: no-repeat;
-
-    height: 1025px;
-
-}
-
-.main-headline-future, .secondary-headline-future, .headline-simple {
-
-    font-family: 'Overpass', sans-serif;
-    color: #1F3F5B;
-
-}
-
-.main-headline-future {
-
-    font-size: 32px;
-    text-align: center;
-
     margin: 100px auto;
 
 }
 
-.secondary-headline-future, .headline-simple {
+.headline-future {
 
-    text-align: left;
-    width: 500px;
+    margin-top: 80px;
+
+}
+
+.secondary-headline-description {
+
+    width: 550px;
+    margin: 30px 0 100px 185px;
+
+}
+
+.headline-future, .secondary-headline {
+
+    color: #1F3D5B;
+
+}
+
+.headline-future {
+
+    font-size: 32px;
+    text-align: center;
+
+}
+
+.secondary-headline {
 
     font-size: 24px;
+    margin: 100px 0 30px 0;
 
 }
 
-.secondary-headline-future {
+.description-future, .description-simple {
 
-    margin: 70px auto 15px auto;
-
-}
-
-.description-future {
-
-    font-family: 'Overpass', sans-serif;
-
-    color: hsl(207, 13%, 34%);
-
-    text-align: left;
     line-height: 1.5;
-
-    width: 510px;
-
-}
-
-.secondary-headline-future, .description-future {
-
-    margin-left: 180px;
+    text-align: left;
+    width: 500px;
+    color: #4B5862;
 
 }
 
 .section-art-infrastructure {
 
-    background-color: hsl(237, 17%, 21%);
+    background-color: #2C2D3F;
     background-image: url(/images/bg-pattern-circles.svg);
     background-repeat: no-repeat;
-    background-position: -50% 85%;
-
+    background-position: -50% 77%;
     border-radius: 0 100px 0 100px;
-
-    color: #FFFFFF;
-
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-
     height: 400px;
 
 }
 
 .image-art-infrastructure {
 
-    margin: 50px 0 0 120px;
+    margin: 50px 50px 0 0;
+
+}
+
+.headline-art-infrastructure, .description-art-infrastructure {
+
+    font-family: 'Overpass', sans-serif;
 
 }
 
 .headline-art-infrastructure {
 
-    font-family: 'Overpass', sans-serif;
-
-    margin-right: 60px;
-
+    color: #FFFFFF;
     font-weight: 400;
-
     width: 500px;
-    text-align: center;
-
     font-size: 32px;
 
 }
 
 .description-art-infrastructure {
 
-    font-family: 'Overpass', sans-serif;
-
+    color: #C8C8CB;
     line-height: 1.5;
-
     text-align: left;
-
-    width: 520px;
-
-    margin: 16px 0 16px auto;
+    width: 500px;
 
 }
 
 .section-simple {
 
+    font-family: 'Overpass', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -279,36 +270,20 @@ body {
 
 .headline-description-simple {
 
-    font-family: 'Overpass', sans-serif;
-
-}
-
-.headline-simple {
-
-    margin-top: 80px;
-
-}
-
-.description-simple {
-
-    line-height: 1.5;
-    width: 500px;
-
-    margin-bottom: 70px;
+    margin-left: 40px;
+    margin-bottom: 100px;
 
 }
 
 .footer {
 
+    font-family: 'Ubuntu', sans-serif;
     height: 400px;
-
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: start;
-
-    background: #25252d;
-
+    background: #25252D;
     border-top-right-radius: 100px;
 
 }
@@ -323,16 +298,14 @@ body {
 .links-footer {
 
     width: 32px;
-
     text-align: left;
 
 }
 
 .links-headline {
-    font-family: 'Ubuntu', sans-serif;
 
     color: #FFFFFF;
-    font-weight: 600;
+    margin-bottom: 30px;
 
 }
 
@@ -346,17 +319,29 @@ body {
 .links-item {
 
     text-decoration: none;
-    color: hsl(240, 2%, 79%);
-
+    color: #C8C8CB;
     line-height: 2;
-
-    font-family: 'Ubuntu', sans-serif;
 
 }
 
 .links-item:hover {
 
-    color: #FFFFFF;
     border-bottom: 1px solid #FFFFFF;
+
+}
+
+.attribution {
+
+    text-align: center;
+    background: #25252d;
+    color: #C8C8CB;
+    padding: 20px 0;
+
+}
+
+.attribution a {
+
+    text-decoration: none;
+    color: #C8C8CB;
 
 }

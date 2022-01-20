@@ -1,101 +1,94 @@
-/* GOOGLE FONTS - Ubuntu */
+/* Ubuntu - Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-/* GOOGLE FONTS - Overpass */
-@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+/* Overpass - Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
 
-    margin: 0;
     padding: 0;
-
-}
-
-body {
-
-    font-size: 16px;
-    box-sizing: border-box;
+    margin: 0;
 
 }
 
 .header {
 
-    width: 1440px;
-
-    background: url(/images/bg-pattern-intro-desktop.svg), linear-gradient(to right, hsl(13, 100%, 72%), rgb(255, 61, 84));
-    background-position: 25% 52%;
-    background-repeat: no-repeat;
-    min-height: 600px;
-    border-bottom-left-radius: 100px;
-
-}
-
-.main-header, .logo-dropdown-menu {
-
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-
-}
-
-.main-header {
-
-    justify-content: space-around;
-    padding-top: 80px;
+    background-color: red;
+    color: #FFFFFF;
+    height: 1000px;
+    padding-top: 50px;
     margin: 0 auto;
 
 }
 
-.logo-dropdown-menu {
+.logo-menu, #header-register {
 
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+#header-menu {
+
+    display: flex;
     gap: 50px;
 
 }
 
-.dropdown, .login, .sign-up, .start-free, .learn-more {
+#icon-hamburger, #icon-close {
 
-    font-family: 'Ubuntu', sans-serif;
-    color: #FFFFFF;
-
-}
-
-.dropdown, .register {
-
-    margin-top: 12px;
+    display: none;
 
 }
 
-.dropdown-headline:hover {
+#icon-hamburger, #icon-close, .menu, #header-register {
+
+    margin-top: 15px;
+
+}
+
+.menu-headline {
+
+    margin-bottom: 20px;
+
+}
+
+.menu-headline:hover {
 
     cursor: pointer;
 
 }
 
-.dropdown-list {
+.menu-item {
 
-    display: none;
+    line-height: 1.5;
     list-style: none;
-    margin-top: 20px;
 
 }
 
-.list-item {
+.menu-link, .register-login, .register-sign-up {
 
     text-decoration: none;
     color: #FFFFFF;
-    line-height: 2;
 
 }
 
-.login, .sign-up, .start-free, .learn-more {
+.header-register {
+
+    display: block;
+
+}
+
+.register-login, .register-sign-up {
 
     padding: 10px 30px;
-    text-decoration: none;
     font-weight: 600;
 
 }
 
-.login:hover, .sign-up:hover, .start-free:hover, .learn-more:hover {
+.register-login:hover, .register-sign-up:hover {
 
     background: #FFFFFF;
     color: #FF525D;
@@ -103,245 +96,40 @@ body {
 
 }
 
-.main-section-header {
+.header-main-content {
 
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    color: #FFFFFF;
+    margin: 100px auto;
 
 }
 
-.main-section-headline, .main-section-description {
+.main-content-headline {
 
-    font-family: 'Overpass', sans-serif;
-
-}
-
-.main-section-headline {
-
-    font-weight: 400px;
     font-size: 64px;
-
-}
-
-.main-section-description {
-
-    font-size: 18px;
+    font-weight: 400;
     text-align: center;
-    margin: 30px auto;
-
-}
-
-.main-section-start-more {
-
-    margin: 30px auto;
 
 }
 
 .start-free, .learn-more {
 
-    margin: 0 5px;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    font-weight: 600;
     border: 1px solid #FFFFFF;
     border-radius: 20px;
 
 }
 
-.section-future {
+.start-free:hover, .learn-more:hover {
 
-    min-height: 900px;
-    background: url(/images/illustration-editor-desktop.svg);
-    background-position: 152%;
-    background-repeat: no-repeat;
-    font-family: 'Overpass', sans-serif;
-    display: flex;
-    flex-direction: column;
-    margin: 100px auto;
-
-}
-
-.headline-future {
-
-    margin-top: 80px;
-
-}
-
-.secondary-headline-description {
-
-    width: 550px;
-    margin: 30px 0 100px 185px;
-
-}
-
-.headline-future, .secondary-headline {
-
-    color: #1F3D5B;
-
-}
-
-.headline-future {
-
-    font-size: 32px;
-    text-align: center;
-
-}
-
-.secondary-headline {
-
-    font-size: 24px;
-    margin: 100px 0 30px 0;
-
-}
-
-.description-future, .description-simple {
-
-    line-height: 1.5;
-    text-align: left;
-    width: 500px;
-    color: #4B5862;
-
-}
-
-.section-art-infrastructure {
-
-    background-color: #2C2D3F;
-    background-image: url(/images/bg-pattern-circles.svg);
-    background-repeat: no-repeat;
-    background-position: -50% 77%;
-    border-radius: 0 100px 0 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-
-}
-
-.image-art-infrastructure {
-
-    margin: 50px 50px 0 0;
-
-}
-
-.headline-art-infrastructure, .description-art-infrastructure {
-
-    font-family: 'Overpass', sans-serif;
-
-}
-
-.headline-art-infrastructure {
-
-    color: #FFFFFF;
-    font-weight: 400;
-    width: 500px;
-    font-size: 32px;
-
-}
-
-.description-art-infrastructure {
-
-    color: #C8C8CB;
-    line-height: 1.5;
-    text-align: left;
-    width: 500px;
-
-}
-
-.section-simple {
-
-    font-family: 'Overpass', sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-
-    margin: 100px 0;
-
-}
-
-.image-simple {
-
-    margin-left: -275px;
-    margin-right: 30px;
-
-}
-
-.headline-description-simple {
-
-    margin-left: 40px;
-    margin-bottom: 100px;
-
-}
-
-.footer {
-
-    font-family: 'Ubuntu', sans-serif;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: start;
-    background: #25252D;
-    border-top-right-radius: 100px;
-
-}
-
-.image-footer, .links-footer {
-
-    margin: 50px 120px;
-    text-align: left;
-
-}
-
-.links-footer {
-
-    width: 32px;
-    text-align: left;
-
-}
-
-.links-headline {
-
-    color: #FFFFFF;
-    margin-bottom: 30px;
-
-}
-
-.links-content {
-
-    list-style: none;
-    padding: 0;
-
-}
-
-.links-item {
-
-    text-decoration: none;
-    color: #C8C8CB;
-    line-height: 2;
-
-}
-
-.links-item:hover {
-
-    border-bottom: 1px solid #FFFFFF;
-
-}
-
-.attribution {
-
-    text-align: center;
-    background: #25252d;
-    color: #C8C8CB;
-    padding: 20px 0;
-
-}
-
-.attribution a {
-
-    text-decoration: none;
-    color: #C8C8CB;
+    background: #FFFFFF;
+    color: #FF525D;
 
 }

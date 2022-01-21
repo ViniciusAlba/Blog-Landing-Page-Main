@@ -13,20 +13,52 @@
 
 .header {
 
-    background-color: red;
+    background: url(/images/bg-pattern-intro-desktop.svg), linear-gradient(to right, hsl(13, 100%, 72%), rgb(255, 61, 84));
+    background-position: 25% 54%;
     color: #FFFFFF;
-    height: 1000px;
+    height: 600px;
     padding-top: 50px;
     margin: 0 auto;
+    border-bottom-left-radius: 100px;
+
+}
+
+.header-navs {
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.logo-menu {
+
+    gap: 50px;
+
+}
+
+.icon-hamburger, .icon-close {
+
+    display: none;
+
+}
+
+.logo-menu {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+#header-register {
+
+    display: block;
 
 }
 
 .logo-menu, #header-register {
 
     font-family: 'Ubuntu', sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 
 }
 
@@ -37,15 +69,28 @@
 
 }
 
-#icon-hamburger, #icon-close {
+.menu-content {
+
+    margin-bottom: 0;
+
+}
+
+#content-product, #content-company, #content-connect {
 
     display: none;
 
 }
 
+#content-product.active, #content-company.active, #content-connect.active {
+
+    display: block;
+    position: absolute;
+
+}
+
 #icon-hamburger, #icon-close, .menu, #header-register {
 
-    margin-top: 15px;
+    margin-top: 10px;
 
 }
 
@@ -102,9 +147,17 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: 100px auto;
+    gap: 50px;
+    margin-top: 150px;
+
+}
+
+.main-content-headline-description {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
 }
 
@@ -113,6 +166,13 @@
     font-size: 64px;
     font-weight: 400;
     text-align: center;
+
+}
+
+.header-main-links {
+
+    display: flex;
+    gap: 20px;
 
 }
 

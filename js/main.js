@@ -12,8 +12,17 @@ function openMenu() {
     headerMenu.classList.toggle('active');
     headerRegister.classList.toggle('active');
 
-    iconHamburger.style.display = 'none';
-    iconClose.style.display = 'block';
+    if (document.style.width < 376) {
+
+        iconHamburger.style.display = 'block';
+        iconClose.style.display = 'none';
+
+    } else {
+
+        iconHamburger.style.display = 'none';
+        iconClose.style.display = 'none';
+
+    }
 
 }
 
@@ -22,8 +31,17 @@ function closeMenu() {
     headerMenu.classList.toggle('active');
     headerRegister.classList.toggle('active');
 
-    iconHamburger.style.display = 'block';
-    iconClose.style.display = 'none';
+    if (document.style.width < 376) {
+
+        iconHamburger.style.display = 'none';
+        iconClose.style.display = 'block';
+
+    } else {
+
+        iconHamburger.style.display = 'none';
+        iconClose.style.display = 'none';
+
+    }
 
 }
 

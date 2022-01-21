@@ -4,14 +4,12 @@
 
         background: url(/images/bg-pattern-intro-mobile.svg), linear-gradient(to bottom right, hsl(13, 100%, 72%), rgb(255, 61, 84));
         background-position: 35% 35%;
-        height: 600px;
-        border-bottom-left-radius: 100px;
 
     }
 
     .logo-menu {
 
-        gap: 50px;
+        gap: 206px;
 
     }
 
@@ -67,18 +65,6 @@
     }
 
     #icon-hamburger {
-
-        display: block;
-
-    }
-
-    #content-product, #content-company, #content-connect {
-
-        display: none;
-
-    }
-
-    #content-product.active, #content-company.active, #content-connect.active {
 
         display: block;
 

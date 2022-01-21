@@ -193,3 +193,70 @@
     color: #FF525D;
 
 }
+
+.section-future {
+
+    font-family: 'Overpass', sans-serif;
+    height: 1000px;
+    margin: 100px auto;
+    overflow-x: hidden;
+
+}
+
+.image-future {
+
+    position: relative;
+    left: 100px;
+
+}
+
+.main-headline-future {
+
+    text-align: center;
+
+}
+
+.image-headline-description-future {
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.headline-description-future {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    margin-left: 355px;
+
+}
+
+.main-headline-future, .secondary-headline{
+
+    color: #1F3F5B;
+
+}
+
+.main-headline-future {
+
+    font-size: 32px;
+
+}
+
+.secondary-headline {
+
+    font-size: 28px;
+
+}
+
+.description {
+
+    width: 510px;
+    line-height: 1.5;
+    color: #4B5862;
+
+}

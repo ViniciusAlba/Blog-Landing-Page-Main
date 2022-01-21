@@ -94,7 +94,6 @@
 
     .section-future {
 
-        font-family: 'Overpass', sans-serif;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -114,10 +113,11 @@
 
     }
 
-    .main-headline-future, .secondary-headline{
+    .headline-description-future {
 
-        color: #1F3F5B;
-
+        flex-direction: column;
+        gap: 50px;
+    
     }
 
     .main-headline-future {
@@ -130,15 +130,12 @@
     .secondary-headline {
 
         font-size: 28px;
-        width: 300px;
 
     }
 
     .description {
 
         width: 300px;
-        line-height: 1.5;
-        color: #4B5862;
 
     }
 

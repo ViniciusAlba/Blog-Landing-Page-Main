@@ -275,10 +275,156 @@
 
 }
 
-/*// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) { ... }
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
 
-// Medium devices (tablets, 768px and up)
+    .section-future {
+
+        margin: 100px auto 200px auto;
+        overflow: visible;
+
+    }
+
+    .image-headline-description-future {
+
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        gap: 50px;
+
+    }
+
+    .headline-description-future {
+
+        width: 100vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    
+    }
+
+    .main-headline-future {
+
+        font-size: 32px;
+        margin-bottom: 50px;
+
+    }
+
+    .secondary-headline {
+
+        font-size: 28px;
+        width: 500px;
+        text-align: center;
+
+    }
+
+    .description {
+
+        width: 500px;
+
+    }
+
+    .image-future {
+
+        content: url(/images/illustration-editor-mobile.svg);
+        position: unset;
+
+    }
+
+    .section-art-infrastructure {
+
+        height: 600px;
+        font-family: 'Overpass', sans-serif;
+        color: #FFFFFF;
+        background: url(/images/bg-pattern-circles.svg), hsl(237, 17%, 21%);
+        background-repeat: no-repeat;
+        background-size: 600px;
+        background-position-x: 50%;
+        background-position-y: -250px;
+        border-bottom-left-radius: 100px;
+        border-top-right-radius: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        margin-top: 300px;
+
+    }
+
+    .image-art-infrastructure {
+
+        position: absolute;
+        top: 1740px;
+
+    }
+
+    .main-headline-art-infrastructure {
+
+        margin-top: 250px;
+        font-size: 32px;
+        font-weight: 400;
+
+    }
+
+    .description-art-infrasctructure {
+
+        width: 500px;
+        line-height: 1.5;
+        margin: 30px auto;
+        text-align: center;
+        color: #C8C8CB
+    
+    }
+
+    .image-simple {
+
+        content: url(/images/illustration-laptop-mobile.svg);
+        position: unset;
+
+    }
+
+    .section-simple {
+
+        font-family: 'Overpass', sans-serif;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+    }
+
+    .headline-description-simple {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+        margin-right: 0;
+
+    }
+
+    .footer {
+
+        justify-content: space-around;
+        align-items: start;
+
+    }
+
+}
+
+/*// Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) { ... }
 
 // Large devices (desktops, 992px and up)

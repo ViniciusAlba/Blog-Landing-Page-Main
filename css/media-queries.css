@@ -94,7 +94,8 @@
 
     .section-future {
 
-        margin: 100px auto 380px auto;
+        margin: 100px auto 200px auto;
+        overflow: visible;
 
     }
 
@@ -176,7 +177,7 @@
     .image-art-infrastructure {
 
         position: absolute;
-        top: 1965px;
+        top: 1840px;
 
     }
 
@@ -210,6 +211,8 @@
         margin: 50px auto;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 50px;
 
     }

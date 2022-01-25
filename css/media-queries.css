@@ -94,11 +94,7 @@
 
     .section-future {
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin: 100px auto;
+        margin: 100px auto 380px auto;
 
     }
 
@@ -107,6 +103,7 @@
         width: 355px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         margin: 0 auto;
         gap: 50px;
@@ -115,8 +112,8 @@
 
     .headline-description-future {
 
-        flex-direction: column;
-        gap: 50px;
+        text-align: center;
+        margin: 0 auto;
     
     }
 
@@ -130,6 +127,8 @@
     .secondary-headline {
 
         font-size: 28px;
+        width: 300px;
+        text-align: center;
 
     }
 
@@ -142,6 +141,7 @@
     .image-future {
 
         content: url(/images/illustration-editor-mobile.svg);
+        position: unset;
 
     }
 

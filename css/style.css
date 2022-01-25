@@ -199,7 +199,7 @@
     font-family: 'Overpass', sans-serif;
     height: 1000px;
     margin: 100px auto;
-    overflow-x: hidden;
+    overflow: hidden;
 
 }
 

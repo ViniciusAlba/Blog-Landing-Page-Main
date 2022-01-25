@@ -41,12 +41,11 @@
     #header-menu.active {
 
         height: 300px;
-        width: 355px;
+        width: 95vw;
         margin: 20px auto;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        gap: 40px;
+        justify-content: space-around;
         position: absolute;
         top: 100px;
         border-radius: 20px;
@@ -60,7 +59,6 @@
         display: flex;
         position: absolute;
         top: 310px;
-        left: 62px;
 
     }
 
@@ -278,6 +276,67 @@
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
 
+    .logo-menu {
+
+        gap: 65vw;
+        
+    }
+
+    #icon-close {
+
+        margin-left: 6px;
+
+    }
+
+    #header-menu {
+
+        display: flex;
+        justify-content: space-around;
+    
+    }
+
+    .menu {
+
+        width: 85px;
+    
+    }
+
+    #header-menu, #header-register {
+
+        display: none;
+
+    }
+
+    #header-menu.active {
+
+        height: 300px;
+        width: 95vw;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: absolute;
+        top: 100px;
+        border-radius: 20px;
+        background-color: rgba(0,0,0,0.2);
+        backdrop-filter: blur(5px);
+
+    }
+
+    #header-register.active {
+
+        display: flex;
+        position: absolute;
+        top: 310px;
+
+    }
+
+    #icon-hamburger {
+
+        display: block;
+
+    }
+
     .section-future {
 
         margin: 100px auto 200px auto;
@@ -424,10 +483,134 @@
 
 }
 
-/*// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) { ... }
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
 
-// Large devices (desktops, 992px and up)
+    .section-future {
+
+        margin: 100px auto 200px auto;
+        overflow: visible;
+
+    }
+
+    .image-headline-description-future {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        gap: 50px;
+
+    }
+
+    .headline-description-future {
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    
+    }
+
+    .main-headline-future {
+
+        font-size: 32px;
+        margin-bottom: 50px;
+
+    }
+
+    .secondary-headline {
+
+        font-size: 28px;
+        text-align: center;
+
+    }
+
+    .image-future {
+
+        content: url(/images/illustration-editor-mobile.svg);
+        position: unset;
+
+    }
+
+    .section-art-infrastructure {
+
+        height: 600px;
+        font-family: 'Overpass', sans-serif;
+        color: #FFFFFF;
+        background: url(/images/bg-pattern-circles.svg), hsl(237, 17%, 21%);
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+        background-position-y: -550px;
+        border-bottom-left-radius: 100px;
+        border-top-right-radius: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 300px;
+
+    }
+
+    .image-art-infrastructure {
+
+        position: absolute;
+        top: 1740px;
+
+    }
+
+    .main-headline-art-infrastructure {
+
+        margin-top: 250px;
+        font-size: 32px;
+        font-weight: 400;
+
+    }
+
+    .image-simple {
+
+        content: url(/images/illustration-laptop-mobile.svg);
+        position: unset;
+
+    }
+
+    .section-simple {
+
+        font-family: 'Overpass', sans-serif;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+    }
+
+    .headline-description-simple {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+        margin-right: 0;
+
+    }
+
+    .footer {
+
+        align-items: start;
+
+    }
+
+}
+
+/*// Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) { ... }
 
 // Extra large devices (large desktops, 1200px and up)

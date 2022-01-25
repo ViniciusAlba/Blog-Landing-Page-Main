@@ -12,14 +12,10 @@ function openMenu() {
     headerMenu.classList.toggle('active');
     headerRegister.classList.toggle('active');
 
-    if (document.style.width < 376) {
+
+    if (window.width < 768) {
 
         iconHamburger.style.display = 'block';
-        iconClose.style.display = 'none';
-
-    } else {
-
-        iconHamburger.style.display = 'none';
         iconClose.style.display = 'none';
 
     }
@@ -31,15 +27,10 @@ function closeMenu() {
     headerMenu.classList.toggle('active');
     headerRegister.classList.toggle('active');
 
-    if (document.style.width < 376) {
+    if (window.width < 768) {
 
         iconHamburger.style.display = 'none';
         iconClose.style.display = 'block';
-
-    } else {
-
-        iconHamburger.style.display = 'none';
-        iconClose.style.display = 'none';
 
     }
 

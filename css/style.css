@@ -323,12 +323,77 @@
     flex-direction: column;
     text-align: left;
     gap: 50px;
-    margin-right: 200px;
+    margin-right: 320px;
+    
 }
 
 .image-simple {
 
     position: relative;
-    right: 200px;
+    right: 95px;
+
+}
+
+.footer {
+
+    font-family: 'Ubuntu', sans-serif;
+    background: #25252D;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top-right-radius: 100px;
+    padding: 50px 0;
+
+}
+
+.footer-list {
+
+    width: 92px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.list-headline {
+
+    color: #FFFFFF;
+
+}
+
+.list-item {
+
+    list-style: none;
+    line-height: 1.5;
+
+}
+
+.list-link {
+
+    color: #C8C8CB;
+    text-decoration: none;
+
+}
+
+.attribution {
+
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    background: #25252D;
+    color: #FFFFFF;
+    padding: 10px 0;
+}
+
+.attribution a {
+
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+.attribution a:hover {
+
+    color: #C8C8CB;
 
 }

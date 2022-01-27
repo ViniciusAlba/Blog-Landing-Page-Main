@@ -82,7 +82,7 @@
 
     }
 
-    .section-future, .image-future, .description {
+    .section-future, .image-future, .description, .headline-art-infrastructure, .description-art-infrastructure {
 
         width: 90vw;
 
@@ -115,6 +115,36 @@
 
         position: unset;
     
+    }
+
+    .section-art-infrastructure {
+
+        text-align: center;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+
+    }
+
+    .image-art-infrastructure {
+
+        width: 100vw;
+
+    }
+
+    .headline-art-infrastructure {
+
+        font-size: 34px;
+
+    }
+
+    .description-art-infrastructure {
+
+        margin: 0 auto 250px auto;
+
     }
 
 }
@@ -240,9 +270,43 @@
     
     }
 
-    .secondary-headline, .description {
+    .secondary-headline, .description, .headline-art-infrastructure, .description-art-infrastructure {
 
         width: 80vw;
+
+    }
+
+    .section-art-infrastructure {
+
+        background-position: 50% 300%;
+        background-size: 700px;
+        text-align: center;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        margin: 200px 0 100px 0;
+
+    }
+
+    .image-art-infrastructure {
+
+        width: 100vw;
+
+    }
+
+    .headline-art-infrastructure {
+
+        font-size: 34px;
+        margin-top: 30px;
+
+    }
+
+    .description-art-infrastructure {
+
+        margin: 0 auto 320px auto;
 
     }
 

@@ -230,3 +230,42 @@ body {
     margin-bottom: 50px;
 
 }
+
+.section-art-infrastructure {
+
+    font-family: 'Overpass', sans-serif;
+    background: url(/images/bg-pattern-circles.svg), linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    background-position: -50% 80%;
+    background-repeat: no-repeat;
+    height: 410px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    margin: 100px 0;
+
+}
+
+.image-art-infrastructure {
+
+    margin-top: 40px;
+
+}
+
+.headline-art-infrastructure {
+
+    font-size: 34px;
+    font-weight: 400;
+
+}
+
+.description-art-infrastructure {
+
+    width: 500px;
+    line-height: 1.5;
+
+}

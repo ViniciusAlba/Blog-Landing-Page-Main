@@ -1,69 +1,36 @@
-let iconHamburger = document.querySelector('#icon-hamburger');
-let iconClose = document.querySelector('.icon-close');
+let hamburgerMenu = document.querySelector('#hamburger-menu');
+let headerMenu = document.querySelector('.header-menu');
+let headerMenuLoginRegister = document.querySelector('.header-menu-login-register');
 
-let headerMenu = document.querySelector('#header-menu');
-let headerRegister = document.querySelector('#header-register');
+function toggleMenu() {
 
-iconHamburger.addEventListener('click', openMenu);
-iconClose.addEventListener('click', closeMenu);
+    hamburgerMenu.classList.toggle('.active');
 
-function openMenu() {
+    if (hamburgerMenu.classList == '.active') {
 
-    headerMenu.classList.toggle('active');
-    headerRegister.classList.toggle('active');
+        hamburgerMenu.style.backgroundImage = 'url(/images/icon-close.svg)';
 
+        headerMenu.style.width = '100%';
+        headerMenu.style.display = 'flex';
+        headerMenu.style.flexDirection = 'row';
+        headerMenu.style.flexFlow = 'wrap';
+        headerMenu.style.gap = '2vw';
+        headerMenu.style.position = 'absolute';
+        headerMenu.style.top = '100px';
+        headerMenu.style.left = '0px';
+        headerMenu.style.background = 'rgba(0, 0, 0, 0.2)';
+        headerMenu.style.backdropFilter = 'blur(5px)';
 
-    if (window.width < 768) {
+        headerMenuLoginRegister.style.display = 'block';
 
-        iconHamburger.style.display = 'block';
-        iconClose.style.display = 'none';
+    } else {
 
-    }
-
-}
-
-function closeMenu() {
-
-    headerMenu.classList.toggle('active');
-    headerRegister.classList.toggle('active');
-
-    if (window.width < 768) {
-
-        iconHamburger.style.display = 'none';
-        iconClose.style.display = 'block';
+        hamburgerMenu.style.backgroundImage = 'url(/images/icon-hamburger.svg)';
+        headerMenu.style.display = 'none';
+        headerLoginRegister.style.display = 'none';
 
     }
 
 }
 
-let headlineProduct = document.querySelector('#headline-product');
-let headlineCompany = document.querySelector('#headline-company');
-let headlineConnect = document.querySelector('#headline-connect');
-
-function toggleContentProduct() {
-
-    let contentProduct = document.querySelector('#content-product');
-
-    contentProduct.classList.toggle('active');
-
-}
-
-function toggleContentCompany() {
-
-    let contentCompany = document.querySelector('#content-company');
-
-    contentCompany.classList.toggle('active');
-
-}
-
-function toggleContentConnect() {
-
-    let contentConnect = document.querySelector('#content-connect');
-
-    contentConnect.classList.toggle('active');
-
-}
-
-headlineProduct.addEventListener('click', toggleContentProduct);
-headlineCompany.addEventListener('click', toggleContentCompany);
-headlineConnect.addEventListener('click', toggleContentConnect);
+hamburgerMenu.addEventListener('click', toggleMenu);

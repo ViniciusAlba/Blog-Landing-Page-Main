@@ -1,399 +1,232 @@
-/* Ubuntu - Google Fonts */
+/* FONTS GOOGLE - UBUNTU */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-/* Overpass - Google Fonts */
+/* FONTS GOOGLE - OVERPASS */
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
+body {
 
-    padding: 0;
     margin: 0;
 
 }
 
-.header {
+#header {
 
     background: url(/images/bg-pattern-intro-desktop.svg), linear-gradient(to right, hsl(13, 100%, 72%), rgb(255, 61, 84));
     background-position: 25% 54%;
     color: #FFFFFF;
-    height: 600px;
-    padding-top: 50px;
-    margin: 0 auto;
+    padding: 50px 0;
     border-bottom-left-radius: 100px;
 
 }
 
-.header-navs {
+#header a {
 
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 30px;
+
+}
+
+.header-logo-menu-login-register {
+
+    font-family: 'Ubuntu', sans-serif;
     display: flex;
+    flex-direction: row;
+    align-items: start;
     justify-content: space-around;
 
 }
 
-.logo-menu {
-
-    gap: 50px;
-
-}
-
-.icon-hamburger, .icon-close {
-
-    display: none;
-
-}
-
-.logo-menu {
+.header-logo-menu, .header-menu {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-
-}
-
-#header-register {
-
-    display: block;
-
-}
-
-.logo-menu, #header-register {
-
-    font-family: 'Ubuntu', sans-serif;
-
-}
-
-#header-menu {
-
-    display: flex;
+    align-items: start;
     gap: 50px;
 
 }
 
-.menu-content {
-
-    margin-bottom: 0;
-
-}
-
-#content-product, #content-company, #content-connect {
-
-    display: none;
-
-}
-
-#content-product.active, #content-company.active, #content-connect.active {
-
-    display: block;
-    position: absolute;
-
-}
-
-#icon-hamburger, #icon-close, .menu, #header-register {
+.header-menu, .header-login-register {
 
     margin-top: 10px;
 
 }
 
-.menu-headline {
+.header-menu-login-register {
 
-    margin-bottom: 20px;
+    display: none;
 
 }
 
-.menu-headline:hover {
+.header-login-register a, .header-menu-login-register a, .main-section-start-free-learn-more a {
+
+    color: #FFFFFF;
+
+}
+
+.header-login-register a:hover, .header-menu-login-register a:hover, .main-section-start-free-learn-more a:hover {
+
+    color: #FF525D;
+    background: #FFFFFF;
+    border-radius: 20px;
+
+}
+
+.header-dropdown:hover {
 
     cursor: pointer;
 
 }
 
-.menu-item {
+.dropdown-content {
 
-    line-height: 1.5;
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+.dropdown-content ul {
+
+    padding: 0;
+
+}
+
+.dropdown-content li {
+
     list-style: none;
 
 }
 
-.menu-link, .register-login, .register-sign-up {
-
+.dropdown-content a {
+    
     text-decoration: none;
-    color: #FFFFFF;
-
-}
-
-.header-register {
-
+    color: #FF525D;
     display: block;
 
 }
 
-.register-login, .register-sign-up {
+.dropdown-content a:hover {
 
-    padding: 10px 30px;
-    font-weight: 600;
-
-}
-
-.register-login:hover, .register-sign-up:hover {
-
-    background: #FFFFFF;
-    color: #FF525D;
-    border-radius: 20px;
+    background-color: #c8c8cb52;
 
 }
 
-.header-main-content {
+.header-dropdown:hover .dropdown-content {
 
-    font-family: 'Overpass', sans-serif;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    margin-top: 150px;
-
-}
-
-.main-content-headline-description {
+    display: block;
     
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
 }
 
-.main-content-headline {
+.main-section-start-free-learn-more a {
 
-    font-size: 64px;
-    font-weight: 400;
-    text-align: center;
-
-}
-
-.header-main-links {
-
-    display: flex;
-    gap: 20px;
-
-}
-
-.start-free, .learn-more {
-
-    text-decoration: none;
-    color: #FFFFFF;
-    padding: 10px 30px;
-    font-weight: 600;
     border: 1px solid #FFFFFF;
     border-radius: 20px;
 
 }
 
-.start-free:hover, .learn-more:hover {
+.header-main-section {
 
-    background: #FFFFFF;
-    color: #FF525D;
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    gap: 30px;
+
+}
+
+.main-section-headline-description {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main-section-headline-description h1 {
+
+    font-size: 64px;
+    font-weight: 400;
+    margin: 0;
+
+}
+
+.main-section-headline-description p {
+
+    font-size: 18px;
+    letter-spacing: 1px;
+
+}
+
+.main-section-start-free-learn-more a {
+
+    margin: 0 10px;
 
 }
 
 .section-future {
 
     font-family: 'Overpass', sans-serif;
-    height: 1000px;
-    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
 
 }
 
-.image-future {
-
-    position: relative;
-    left: 100px;
-
-}
-
-.main-headline-future {
-
-    text-align: center;
-
-}
-
-.image-headline-description-future {
-
+.image-secondary-headline-description {
+    
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-left: 450px;
 
 }
 
-.headline-description-future {
+.secondary-headline-description {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 50px;
-    margin-left: 355px;
+    margin-top: 50px;
 
 }
 
-.main-headline-future, .secondary-headline {
+.headline-future {
 
-    color: #1F3F5B;
-
-}
-
-.main-headline-future {
-
-    font-size: 32px;
+    position: relative;
+    top: 150px;
+    font-size: 34px;
 
 }
 
 .secondary-headline {
 
-    font-size: 28px;
+    font-size: 26px;
+    margin-bottom: 20px;
+
+}
+
+.headline-future, .secondary-headline {
+
+    color: #1F3F5B;
 
 }
 
 .description {
 
-    width: 510px;
-    line-height: 1.5;
+    width: 507.5px;
     color: #4B5862;
-
-}
-
-.section-art-infrastructure {
-
-    height: 410px;
-    font-family: 'Overpass', sans-serif;
-    color: #FFFFFF;
-    background: url(/images/bg-pattern-circles.svg), hsl(237, 17%, 21%);
-    background-repeat: no-repeat;
-    background-position-x: -50%;
-    background-position-y: -500px;
-    border-bottom-left-radius: 100px;
-    border-top-right-radius: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    gap: 50px;
-    margin-top: 50px;
-
-}
-
-.image-art-infrastructure {
-
-    margin-top: 40px;
-
-}
-
-.main-headline-art-infrastructure {
-
-    font-size: 32px;
-    font-weight: 400;
-
-}
-
-.description-art-infrasctructure {
-
-    width: 500px;
     line-height: 1.5;
-    margin: 30px auto;
-    color: #C8C8CB
-
-}
-
-.section-simple {
-
-    font-family: 'Overpass', sans-serif;
-    margin: 50px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 200px;
-    overflow: hidden;
-
-}
-
-.headline-description-simple {
-
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    gap: 50px;
-    margin-right: 320px;
-    
-}
-
-.image-simple {
-
-    position: relative;
-    right: 95px;
-
-}
-
-.footer {
-
-    font-family: 'Ubuntu', sans-serif;
-    background: #25252D;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border-top-right-radius: 100px;
-    padding: 50px 0;
-
-}
-
-.footer-list {
-
-    width: 92px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
-}
-
-.list-headline {
-
-    color: #FFFFFF;
-
-}
-
-.list-item {
-
-    list-style: none;
-    line-height: 1.5;
-
-}
-
-.list-link {
-
-    color: #C8C8CB;
-    text-decoration: none;
-
-}
-
-.attribution {
-
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
-    background: #25252D;
-    color: #FFFFFF;
-    padding: 10px 0;
-}
-
-.attribution a {
-
-    color: #FFFFFF;
-    text-decoration: none;
-
-}
-
-.attribution a:hover {
-
-    color: #C8C8CB;
+    margin-bottom: 50px;
 
 }

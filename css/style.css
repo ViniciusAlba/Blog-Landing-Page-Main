@@ -193,7 +193,7 @@ body {
 
 }
 
-.secondary-headline-description {
+.secondary-headline-description-future {
 
     display: flex;
     flex-direction: column;
@@ -268,5 +268,17 @@ body {
     width: 500px;
     line-height: 1.5;
     color: hsl(240, 2%, 79%);
+
+}
+
+.section-simple {
+
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 150px 410px 150px 0;
 
 }

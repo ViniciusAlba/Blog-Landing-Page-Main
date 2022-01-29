@@ -99,7 +99,7 @@
     
     }
 
-    .secondary-headline-description {
+    .secondary-headline-description-future {
 
         margin-top: 0;
 
@@ -144,6 +144,26 @@
     .description-art-infrastructure {
 
         margin: 0 auto 250px auto;
+
+    }
+
+    .section-simple {
+
+        font-family: 'Overpass', sans-serif;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        margin: 30px auto;
+    
+    }
+
+    .image-simple {
+
+        width: 100vw;
+        content: url(/images/illustration-laptop-mobile.svg);
 
     }
 
@@ -250,7 +270,7 @@
     
     }
 
-    .secondary-headline-description {
+    .secondary-headline-description-future {
 
         margin-top: 0;
 
@@ -307,6 +327,26 @@
     .description-art-infrastructure {
 
         margin: 0 auto 320px auto;
+
+    }
+
+    .section-simple {
+
+        font-family: 'Overpass', sans-serif;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        margin: 50px auto;
+    
+    }
+
+    .image-simple {
+
+        width: 100vw;
+        content: url(/images/illustration-laptop-mobile.svg);
 
     }
 

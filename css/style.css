@@ -282,3 +282,59 @@ body {
     margin: 150px 410px 150px 0;
 
 }
+
+#footer {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+    background: #25252D;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 200px;
+    border-top-right-radius: 100px;
+    padding: 50px 0;
+
+}
+
+.menus-footer {
+
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+
+}
+
+.menu h4 {
+
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+.menu ul {
+
+    padding: 0;
+
+}
+
+.menu li {
+
+    list-style: none;
+    line-height: 1.5;
+
+}
+
+.menu a {
+
+    text-decoration: none;
+    color: #C8C8CB;
+
+}
+
+.menu a:hover {
+
+    color: #FFFFFF;
+
+}

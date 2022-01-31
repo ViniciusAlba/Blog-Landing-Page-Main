@@ -577,10 +577,7 @@
     #header {
 
         background: url(/images/bg-pattern-intro-desktop.svg), linear-gradient(to bottom right, hsl(13, 100%, 72%), rgb(255, 61, 84));
-        background-position: 45% 52%;
-        color: #FFFFFF;
-        padding: 50px 0;
-        border-bottom-left-radius: 100px;
+        background-position: 38% 52%;
     
     }
 
@@ -623,7 +620,7 @@
 
     .header-main-section {
 
-        margin: 0px auto;
+        margin: 0px auto 100px auto;
     
     }
 
@@ -682,7 +679,7 @@
 
     .section-art-infrastructure {
 
-        background-position: 50% 200%;
+        background-position: 50% 150%;
         background-size: cover;
         text-align: center;
         height: 600px;
@@ -728,9 +725,9 @@
     #footer {
 
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: start;
         gap: 50px;
     
     }
@@ -739,13 +736,52 @@
 
         display: flex;
         flex-direction: row;
-        gap: 150px; 
+        gap: 150px;
+
     }
 
 }
 
-/* // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+@media (min-width: 992px) and (max-width: 1199.98px) {
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... } */
+    #header {
+
+        background: url(/images/bg-pattern-intro-desktop.svg), linear-gradient(to right, hsl(13, 100%, 72%), rgb(255, 61, 84));
+        background-position: 32% 53%;
+        color: #FFFFFF;
+        padding: 50px 0;
+        border-bottom-left-radius: 100px;
+    
+    }
+
+    .section-art-infrastructure {
+
+        background-position: 50% 80%;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+        margin: 250px 0 100px 0;
+
+
+    }
+
+    .description-art-infrastructure, .description {
+
+        width: 400px;
+
+    }
+
+    .section-simple {
+
+        gap: 0;
+
+    }
+
+    .menus-footer {
+
+        gap: 100px;
+
+    }
+
+}

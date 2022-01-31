@@ -21,6 +21,7 @@
     .header-menu, .header-login-register {
 
         display: none;
+        padding-top: 20px;
 
     }
 
@@ -208,6 +209,7 @@
     .header-menu, .header-login-register {
 
         display: none;
+        padding-top: 20px;
 
     }
 
@@ -388,10 +390,192 @@
 
 }
 
-/*// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) { ... }
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
 
-// Medium devices (tablets, 768px and up)
+    #header {
+
+        background: url(/images/bg-pattern-intro-desktop.svg), linear-gradient(to bottom right, hsl(13, 100%, 72%), rgb(255, 61, 84));
+        background-position: 45% 52%;
+        color: #FFFFFF;
+        padding: 50px 0;
+        border-bottom-left-radius: 100px;
+    
+    }
+
+    .header-logo-menu {
+
+        gap: 40vw;
+
+    }
+
+    .header-menu, .header-login-register {
+
+        display: none;
+        padding-top: 20px;
+
+    }
+
+    .header-menu {
+
+        height: 520px;
+
+    }
+
+    .header-dropdown {
+
+        margin-bottom: 220px;
+
+    }
+
+    #hamburger-menu {
+
+        display: block;
+        width: 26px;
+        height: 26px;
+        background-image: url(/images/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        margin-top: 15px;
+    
+    }
+    
+    #hamburger-menu:hover {
+    
+        cursor: pointer;
+    
+    }
+
+    .main-section-headline-description h1 {
+
+        text-align: center;
+    
+    }
+
+    .main-section-headline-description p {
+
+        text-align: center;
+        width: 90vw;
+    
+    }
+
+    .main-section-start-free-learn-more {
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 10px;
+
+    }
+
+    .section-future {
+
+        text-align: center;
+        margin: 100px auto;
+
+    }
+
+    .headline-future, .image-future {
+
+        width: 100vw;
+
+    }
+
+    .image-secondary-headline-description {
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        margin-left: 0px;
+    
+    }
+
+    .image-future {
+
+        content: url(/images/illustration-editor-mobile.svg);
+        width: 90vw;
+
+    }
+
+    .headline-future {
+
+        position: unset;
+    
+    }
+
+    .secondary-headline {
+
+        font-size: 26px;
+        margin-bottom: 20px;
+    
+    }
+
+    .section-art-infrastructure {
+
+        background-position: 50% 200%;
+        background-size: cover;
+        text-align: center;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        margin: 250px 0 100px 0;
+
+    }
+
+    .image-art-infrastructure {
+
+        margin-top: 0px;
+    
+    }
+
+    .description-art-infrastructure {
+
+        margin: 0 auto 360px auto;
+
+    }
+
+    .section-simple {
+
+        font-family: 'Overpass', sans-serif;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        margin: 50px auto;
+    
+    }
+
+    .image-simple {
+
+        width: 90vw;
+        content: url(/images/illustration-laptop-mobile.svg);
+
+    }
+
+    #footer {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    
+    }
+
+    .menus-footer {
+
+        display: flex;
+        flex-direction: row;
+        gap: 150px; 
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) { ... }
 
 // Large devices (desktops, 992px and up)

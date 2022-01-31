@@ -167,6 +167,24 @@
 
     }
 
+    #footer {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    
+    }
+
+    .menus-footer {
+
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    
+    }
+
 }
 
 @media (min-width: 321px) and (max-width: 575.98px) {
@@ -348,6 +366,24 @@
         width: 100vw;
         content: url(/images/illustration-laptop-mobile.svg);
 
+    }
+
+    #footer {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    
+    }
+
+    .menus-footer {
+
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    
     }
 
 }
